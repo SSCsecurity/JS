@@ -1,0 +1,15 @@
+{
+    "name": "uam-example"
+  , "version": "0.0.3"
+  , "description": "Example uam local web application and package.json"
+  , "keywords": ["unhosted", "example", "local", "uam"]
+  , "author": "Mike Cantelon <mcantelon@gmail.com>"
+  , "dependencies": {
+    "optimist": ">= 0.2.6"
+  }
+  , "bin": "uam-example.js"
+  , "uam": {
+    "start": "uam-example"
+  }
+  , "engines": { "node": "0.4.x" }
+}
