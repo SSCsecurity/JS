@@ -69,3 +69,24 @@ createAPIKey(postData) {
 
 axios.isCancel(error)
 
+api.post(
+	'/toasting',
+	bodyParser.json(),
+	foobar<foo | bar, baz>(
+		valboot,
+		async(req) => {
+			const [apple, trunks] = await Promise.all([
+				req.body.slug &&
+					slice.fooobar({
+						env: x,
+						log: y,
+						map: z,
+						requestId: xyz,
+						lance: uip,
+					}),
+				req.body.password && auth.foobar(req.body.password),
+			]);
+			return ( slug, password );
+		},
+	),
+);
