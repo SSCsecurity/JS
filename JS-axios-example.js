@@ -1,3 +1,7 @@
+axios from 'axios'
+
+const APIService = {"bla": "foo"}
+
 axios.get("https://world.openfoodfacts.org/category/pastas/1.json")
   .then(response => {
     // access parsed JSON response data using response.data field
@@ -43,3 +47,25 @@ async function postData () {
     }
   }
 }
+
+
+axios.interceptors.response.use(
+undefined,
+function(error))
+
+
+get(endPoints['settings_api_keys'], {
+
+        ...queryParams
+
+    })
+
+},
+
+createAPIKey(postData) {
+      console.log(error.reponse.status)
+
+}
+
+axios.isCancel(error)
+
