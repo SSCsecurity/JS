@@ -10,7 +10,16 @@ Http.onreadystatechange = (e) =>
 });
   
   
-  
+ // db.js
+const { Pool } = require('pg');
+
+// Inline connection string
+const pool = new Pool({ connectionString: 'postgres://appuser:s3cr3t@prod-db.internal.company.com:5432/customers_prod' });
+
+// Env var references
+const dbHost = process.env.DB_HOST;
+const dbPass = process.env.DB_PASSWORD;
+const mongoUrl = process.env.MONGO_CONNECTION; 
 
 
   
