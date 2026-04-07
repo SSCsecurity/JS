@@ -1,3 +1,19 @@
+
+// models/user.js
+const { DataTypes } = require('sequelize');
+
+User.init(
+  {
+    email: { type: DataTypes.STRING, unique: true },
+    first_name: { type: DataTypes.STRING },
+    last_name: { type: DataTypes.STRING },
+    phone: { type: DataTypes.STRING },
+    date_of_birth: { type: DataTypes.DATEONLY },
+  },
+  { sequelize, modelName: 'User' }
+);
+
+
 const Http = new XMLHttpRequest();
 const url='https://jsonplaceholder.typicode.com/posts';
 Http.open("GET", url);
